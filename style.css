@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+}
+
+.banner{
+    background: linear-gradient(to bottom right,#ffffff70 28%, #ff630052, #ff9e0075);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    vertical-align: middle;
+}
+.bannerImg{
+    background-image: url(https://losproductores.pe/wp-content/uploads/2018/12/plantilla-obrasArkive-header-1200x463.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.cardWrap {
+    padding: 24px;
+    font-family: sans-serif;
+    position: relative;
+    /* width: 100%;
+    min-height: 100%; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-text {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    text-shadow: 2px 4px #111010;
+}
+
+.title-cupon {
+    border-top-left-radius: 8px;
+    border-bottom: 0.5px solid white;
+    margin: 0;
+    padding-bottom: 13px;
+}
+
+.card {
+    box-shadow: 4px 4px 12px -6px #00000087;
+    background: white;
+    height: 14em;
+    float: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.cupon {
+    padding: 12px 15px;
+    border-radius: 50px;
+    border: 2px dashed #0ac2fa;
+    text-decoration: blink;
+    color: black;
+    margin: 0 auto;
+    max-height: 52px;
+    max-width: 128px;
+    font-size: 19px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
+    align-items: center;
+    box-shadow: 0 0 10px 4px #ffffff36; 
+}
+.image-logo{
+    height: 76%;
+    z-index: 0;
+    opacity: 0.05;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.cardLeft {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-right: .13em dashed #fff;
+    width: 12em;
+    background: linear-gradient( #ff6300, #ff9e00);
+}
+
+.cardLeft:before, .cardLeft:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: .9em;
+    height: .9em;
+    /* background: #ffcdab; */
+    border-radius: 50%;
+    right: -.5em;
+}
+
+.cardLeft:before {
+    top: -.4em;
+}
+
+.cardLeft:after {
+    bottom: -.4em;
+}
+.subhead{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 100;    
+}
+.cardRight {
+     width: 33em;
+    border-left: .13em dashed #fff;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.cardRight:before, .cardRight:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: .9em;
+    height: .9em;
+    /* background: #ffcdab; */
+    border-radius: 50%;
+    left: -.5em;
+}
+.title-obra {
+    color: #4f4f60;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+.cardRight:before {
+    top: -.4em;
+}
+
+.cardRight:after {
+    bottom: -.4em;
+}
+
+.cardRight:hover {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+h1 {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+h1 span {
+    font-weight: normal;
+}
+
+.price {
+    font-size: 5em;
+    margin: 16px 0;
+}
+
+.price span {
+    font-size: .8em;
+    font-weight: 100;
+}
+
+h3 {
+    text-align: center;
+    color: #ff6300;
+    margin: 1.8em 0 0 0;
+    font-size: 1.3em;
+}
+
+.title-desc {
+    border-top-right-radius: 8px;
+    color: black;
+    font-weight: 200;
+    font-size: 19px;
+}
+@media (max-width: 780px) {
+    .cardRight {
+        width: 22em;
+    }
+}
+@media (max-width: 600px) {
+    .title-obra{
+        font-size: 26px;
+    }
+    .cardRight {
+        width: 16em;
+    }
+    .cardLeft {
+        width: 10em;
+    }
+    .price {
+        font-size: 3em;
+    }
+}
+@media (max-width: 600px) {
+    .cardRight {
+        width: 100%;
+        border-bottom-left-radius: 8px;
+        border-top-right-radius: 0;
+        border-left: 0;
+    }
+    .cardLeft {
+        width: 100%;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0;
+        border-right: 0;
+    }
+}
