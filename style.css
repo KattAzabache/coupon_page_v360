@@ -4,6 +4,7 @@ body {
 
 .banner{
     background: linear-gradient(to bottom right,#ffffff70 28%, #ff630052, #ff9e0075);
+    /* background: linear-gradient(to bottom right,#ffffff8c , #ff6300d9, #ff9e00cc); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,11 +15,12 @@ body {
     background-image: url(https://losproductores.pe/wp-content/uploads/2018/12/plantilla-obrasArkive-header-1200x463.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
 .cardWrap {
-    padding: 24px;
+    padding: 45px 24px;
     font-family: sans-serif;
     position: relative;
     /* width: 100%;
@@ -185,12 +187,25 @@ h3 {
     font-weight: 200;
     font-size: 19px;
 }
+.img-coup {
+    width: 73%;
+    border-radius: 14px;
+}   
 @media (max-width: 780px) {
+    .img-coup {
+        width: 80%;
+    }
     .cardRight {
         width: 22em;
     }
 }
 @media (max-width: 600px) {
+    .cardRight:hover {
+        margin-left: 0px;
+    }
+    .img-coup {
+        width: 100%;
+    }
     .title-obra{
         font-size: 26px;
     }
